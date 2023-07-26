@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="640.0" prefWidth="896.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.addPartController">
+   <children>
+      <Text layoutX="35.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Part:" wrappingWidth="75.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <RadioButton fx:id="radioOS" layoutX="280.0" layoutY="20.0" mnemonicParsing="false" onAction="#radioSwapOS" text="Outsourced" />
+      <RadioButton fx:id="radioIH" layoutX="160.0" layoutY="20.0" mnemonicParsing="false" onAction="#radioSwapIH" text="In-House" />
+      <TextField fx:id="addPartId" layoutX="160.0" layoutY="120.0" />
+      <TextField fx:id="addPartName" layoutX="160.0" layoutY="165.0" />
+      <TextField fx:id="addPartInv" layoutX="160.0" layoutY="210.0" />
+      <TextField fx:id="addPartExtra" layoutX="160.0" layoutY="345.0" />
+      <TextField fx:id="addPartCost" layoutX="160.0" layoutY="255.0" />
+      <TextField fx:id="addPartMax" layoutX="160.0" layoutY="300.0" />
+      <TextField fx:id="addPartMin" layoutX="380.0" layoutY="300.0" />
+      <Text layoutX="65.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID" />
+      <Text layoutX="65.0" layoutY="182.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" />
+      <Text layoutX="65.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inv" />
+      <Text layoutX="65.0" layoutY="272.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price/Cost" />
+      <Text layoutX="65.0" layoutY="316.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Max" />
+      <Text layoutX="340.0" layoutY="317.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Min" />
+      <Button fx:id="saveButton" layoutX="380.0" layoutY="435.0" mnemonicParsing="false" onAction="#addPart" text="Save" />
+      <Button fx:id="cancelButton" layoutX="448.0" layoutY="435.0" mnemonicParsing="false" onAction="#addPartCancel" text="Cancel" />
+      <Text fx:id="machineCompany" layoutX="65.0" layoutY="362.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Machine ID" />
+   </children>
+</AnchorPane>
